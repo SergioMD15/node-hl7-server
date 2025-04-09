@@ -2,9 +2,7 @@ import EventEmitter from "events";
 import { Socket } from "net";
 import { Message } from "node-hl7-client";
 import type { ListenerOptions } from "../../utils/normalize.js";
-declare const MSA_1_VALUES_v2_1: string[];
-declare const MSA_1_VALUES_v2_x: string[];
-type Valid_MSA_1 = (typeof MSA_1_VALUES_v2_1)[number] | (typeof MSA_1_VALUES_v2_x)[number];
+type Valid_MSA_1 = "AA" | "AR" | "AE" | "CA" | "CR" | "CE";
 /**
  * Send Response
  * @since 1.0.0
